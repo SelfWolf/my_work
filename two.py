@@ -204,7 +204,7 @@ def reverse_link(head):
 
 
 def merge_link(head1, head2):
-    """链表反转"""
+    """链表合并"""
     if not head1:
         return head2
     if not head2:
