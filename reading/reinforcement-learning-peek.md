@@ -187,10 +187,12 @@ Fig.5 贝尔曼期望方程如何更新状态值和动作值的图示
 
 我们有一个策略函数π，然后通过贪心策略选择动作后得到提升版本的策略$\pi '$，同时
 
-$$ \pi '\left( s \right) = \arg {\max _{a \in A}}{Q_\pi }\left( {s,a} \right) $$
+![improvement policy](RLpic/QA1.png)
 
 那么提升后的策略$\pi '$肯定是更优的，因为：
 
-$$
-{Q_\pi }\left( {s,\pi '\left( s \right)} \right){\rm{ = }}{Q_\pi }\left( {s,\arg {{\max }_{a \in A}}{Q_\pi }\left( {s,a} \right)} \right) = \mathop {\max }\limits_{a \in A} {Q_\pi }\left( {s,a} \right) \ge {V_\pi }\left( s \right)
-$$
+![prove policy improvement](RLpic/QA.png)
+
+#### Monte-Carlo Methods
+
+
