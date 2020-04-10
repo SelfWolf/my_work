@@ -185,7 +185,11 @@ Fig.5 贝尔曼期望方程如何更新状态值和动作值的图示
 
 在广义策略迭代算法中，值函数不断近似的逼近当前策略的真实值，同时迭代过程中，策略也在不断逼近最优。这个策略迭代的过程是有效的且总能收敛到最优值，但是为什么会出现这种情况呢？
 
-我们有一个策略函数π，然后通过贪心策略选择动作后得到提升版本的策略$\pi '$，同时$\pi '\left( s \right) = \arg {\max _{a \in A}}{Q_\pi }\left( {s,a} \right)$，那么提升后的策略$\pi '$肯定是更优的，因为：
+我们有一个策略函数π，然后通过贪心策略选择动作后得到提升版本的策略$\pi '$，同时
+
+$$ \pi '\left( s \right) = \arg {\max _{a \in A}}{Q_\pi }\left( {s,a} \right) $$
+
+那么提升后的策略$\pi '$肯定是更优的，因为：
 
 $$
 {Q_\pi }\left( {s,\pi '\left( s \right)} \right){\rm{ = }}{Q_\pi }\left( {s,\arg {{\max }_{a \in A}}{Q_\pi }\left( {s,a} \right)} \right) = \mathop {\max }\limits_{a \in A} {Q_\pi }\left( {s,a} \right) \ge {V_\pi }\left( s \right)
